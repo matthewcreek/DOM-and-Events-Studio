@@ -10,6 +10,14 @@ const statusFlight = document.getElementById('flightStatus');
 const heightShuttle = document.getElementById('spaceShuttleHeight');
 const backgroundShuttle = document.getElementById('shuttleBackground');
 
+buttonTakeoff.addEventListener('click', function(){
+    let confirmLaunch = window.confirm('Confirm that the shuttle is ready for takeoff.');
+    if (confirmLaunch){
+        statusFlight.innerHTML = 'Shuttle in flight.';
+        backgroundShuttle.style.backgroundColor = 'blue';
+        heightShuttle.innerHTML = add10K(Number(heightShuttle.innerHTML));
+    }
+})
 
 
 
@@ -27,8 +35,8 @@ const backgroundShuttle = document.getElementById('shuttleBackground');
 
 
 
-
-
-
+function add10K(num){
+   return num + 10000
+}
 
 })
