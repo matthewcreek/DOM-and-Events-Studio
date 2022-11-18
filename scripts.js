@@ -16,10 +16,15 @@ buttonTakeoff.addEventListener('click', function(){
         statusFlight.innerHTML = 'Shuttle in flight.';
         backgroundShuttle.style.backgroundColor = 'blue';
         heightShuttle.innerHTML = add10K(Number(heightShuttle.innerHTML));
-    }
-})
+    };
+});
 
-
+buttonLanding.addEventListener('click', function(){
+    window.alert('The shuttle is landing. Landing gear engaged.');
+    statusFlight.innerHTML = 'The shuttle has landed.';
+    backgroundShuttle.style.backgroundColor = 'green';
+    heightShuttle.innerHTML = 0;
+});
 
 
 
