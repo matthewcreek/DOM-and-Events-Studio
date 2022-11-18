@@ -28,3 +28,12 @@
 .centered {
     text-align: center;
 }
+
+#rocket{
+    position: relative;
+    margin-top: 250px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+   
+}
